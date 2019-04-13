@@ -25,3 +25,7 @@ When building the solution let's assume that the code should work on a data set 
 for quite some time (there may be tens of thousands of bikess and bikes may have already a lot of historical locations)
 and we expect non-trivial traffic on the `bikes/:id` enddpoint
 
+The data store is sqlite for simplicity. If you need to add any other datastore feel free to do so. Same regarding any additional
+libraries.
+
+Please create a Pull Request with your solution.
