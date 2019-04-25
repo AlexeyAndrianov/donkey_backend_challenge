@@ -28,4 +28,13 @@ and that we expect non-trivial traffic on the `bikes/:id` enddpoint (for sure he
 The data store is sqlite for simplicity. If you need to add any other datastore feel free to do so. Same regarding any additional
 libraries. You are of course welcome to change the existing code.
 
-Please create a Pull Request with your solution.
+# How to submit solution
+1. First clone the repo
+2. Create a personal private repository on github
+3. Add `jensfrandsen` and `piotrj` as collaborators to your repository
+4. Add your repository as second remote to the project
+5. Push master branch to your remote
+6. Create a branch were you work on the solution
+7. Push a branch with the solution to your repo and create a Pull Request
+8. Then during a call we can talk about the Pull Request
+
