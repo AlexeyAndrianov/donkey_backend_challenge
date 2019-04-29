@@ -17,8 +17,9 @@ The task at hand is to create an endpoint where we can get a bike with its curre
 (simple `GET bikes/:id` endpoint).
 
 The problem with the location we get from the tracker is that it is not very precise and even when the bike is standing still
-we can get consecutive location readings that are 50 meters apart.  We don't want users to walk in circles to find a bike therefore
-we need some way of approximating the location based on the readings we get. The location returned in `GET bikes/:id` endpoint should
+we can get consecutive location readings that are 50 meters apart. We don't want users to walk in circles to find a bike therefore
+we need some way of approximating the location based on the readings we get. For simplicity we can assume that the approximation can
+be just a simple average of latitude and longitude of up to 5 last readings from given location.  The location returned in `GET bikes/:id` endpoint should
 be the approximate one.
 
 When building the solution let's assume that the code should work on a data set that has been gathering information
