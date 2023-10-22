@@ -10,6 +10,8 @@ module LocationService
       $redis.rpush("bike:#{params[:location][:bike_id]}:locations", location_params(params).to_json)
     end
 
+    private
+
     def self.location_params(params)
       params[:location].merge(sent_timestamp: Time.current.iso8601)
     end
