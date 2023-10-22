@@ -18,6 +18,12 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-every 1.minutes do
-  runner 'LocationsWorker.perform_async'
+
+# config/schedule.rb
+
+# Set the environment for your cron jobs
+set :environment, 'development'
+
+every 1.minute do
+  runner 'LocationsWorker.new.perform'
 end
