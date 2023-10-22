@@ -2,11 +2,6 @@
 
 class LocationsController < ApplicationController
   def create
-    location = LocationService::Create.call(location_params)
+    LocationService::Create.call(params)
   end
-
-  def location_params
-    params.merge(created_at: Time.current)
-  end
-
 end

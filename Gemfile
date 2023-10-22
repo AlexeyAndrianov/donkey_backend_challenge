@@ -13,6 +13,7 @@ gem 'sqlite3', '~> 1.6.7'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 gem 'redis'
+gem 'sidekiq'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password

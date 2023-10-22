@@ -195,6 +195,11 @@ GEM
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
     ruby2_keywords (0.0.5)
+    sidekiq (7.1.6)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.14.0)
     sqlite3 (1.6.7)
       mini_portile2 (~> 2.8.0)
     stringio (3.0.8)
@@ -218,6 +223,7 @@ DEPENDENCIES
   rails (~> 7.1.1)
   redis
   rspec-rails (~> 6.0)
+  sidekiq
   sqlite3 (~> 1.6.7)
   tzinfo-data
 
