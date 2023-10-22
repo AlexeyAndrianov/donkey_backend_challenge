@@ -23,7 +23,7 @@ be just a simple average of latitude and longitude of up to 5 newest readings fr
 The location returned in `GET bikes/:id` endpoint should be the approximate one.
 
 When building the solution let's assume that the code should work on a data set that has been gathering information
-for quite some time (there may be thousands of bikess and bikes may have already a lot of historical locations)
+for quite some time (there may be thousands of bikes and bikes may have already a lot of historical locations)
 and that we expect non-trivial traffic on the `bikes/:id` enddpoint (for sure heavier than what we get on POST location endpoint)
 
 The data store is sqlite for simplicity. If you need to add any other datastore feel free to do so. Same regarding any additional
