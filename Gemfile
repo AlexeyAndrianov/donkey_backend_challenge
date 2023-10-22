@@ -14,6 +14,7 @@ gem 'sqlite3', '~> 1.6.7'
 gem 'puma', '~> 3.7'
 gem 'redis'
 gem 'sidekiq'
+gem 'whenever', require: false
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
