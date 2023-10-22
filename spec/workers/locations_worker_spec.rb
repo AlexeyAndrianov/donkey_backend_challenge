@@ -9,7 +9,8 @@ RSpec.describe LocationsWorker, type: :worker do
         location: {
           bike_id: bike1.id,
           latitude: 55.666137,
-          longitude: 12.580222
+          longitude: 12.580222,
+          sent_timestamp: 2.days.ago
         }
       }
     end
@@ -19,7 +20,8 @@ RSpec.describe LocationsWorker, type: :worker do
         location: {
           bike_id: bike2.id,
           latitude: 55.123456,
-          longitude: 12.789012
+          longitude: 12.789012,
+          sent_timestamp: 1.hour.ago
         }
       }
     end

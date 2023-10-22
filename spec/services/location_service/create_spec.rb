@@ -7,7 +7,8 @@ RSpec.describe LocationService::Create, type: :service do
       location: {
         bike_id: bike.id,
         latitude: 55.666137,
-        longitude: 12.580222
+        longitude: 12.580222,
+        sent_timestamp: Time.current.iso8601
       }
     }
   end
