@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe LocationsController, type: :controller do
+  let(:bike) { Bike.create!(name: "The Bike") }
+  let(:other_bike) { Bike.create!(name: "The Bike") }
+
   describe "POST create" do
     specify "it creates a location for given bike" do
-      bike = Bike.create!(name: "The Bike")
-      other_bike = Bike.create!(name: "Other Bike")
 
       post :create, params: {
         location: {
@@ -14,9 +15,8 @@ RSpec.describe LocationsController, type: :controller do
         }
       }
 
-      expect(response.status).to eq(201)
-      expect(bike.locations.count).to eq(1)
-      expect(other_bike.locations.count).to eq(0)
+      expect(response.status).to eq(204)
+      expect($redis.keys.count).to eq(1)
     end
   end
 end
